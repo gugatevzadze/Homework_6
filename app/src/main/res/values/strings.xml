@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Homework_6</string>
+    <string name="email">Email:</string>
+    <string name="first_name">First Name:</string>
+    <string name="last_name">Last Name:</string>
+    <string name="age">Age:</string>
+    <string name="add_user">Add User</string>
+    <string name="remove_user">Remove User</string>
+    <string name="update_user">Update User</string>
+    <string name="your_email_hint">your email</string>
+    <string name="your_name_hint">your name</string>
+    <string name="your_last_name_hint">your last name</string>
+    <string name="your_age_hint">your age</string>
+    <string name="number_of_active_users">Number of Active Users: </string>
+    <string name="number_of_deleted_users">Number of Deleted Users: </string>
+    <string name="status_notification_red">Status Notification - Red</string>
+    <string name="status_notification_green">Status Notification - Green</string>
+    <string name="user_s_email">user\'s email</string>
+</resources>
