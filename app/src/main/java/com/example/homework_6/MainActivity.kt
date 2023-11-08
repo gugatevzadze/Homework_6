@@ -52,8 +52,6 @@ class MainActivity : AppCompatActivity() {
         etLastName = binding.lastNameEdit.text.toString()
         etAge = binding.ageEdit.text.toString()
 
-        val userObject = UserClass(etEmail, etFirstName, etLastName, etAge)
-
         if (validateInputs(etEmail, etFirstName, etLastName, etAge)) {
             val userObject = UserClass(etEmail, etFirstName, etLastName, etAge)
             if (!activeUserList.contains(userObject)) {
@@ -67,13 +65,13 @@ class MainActivity : AppCompatActivity() {
     }
     //thought about making the familiar logic for remove function as update functions but gave up
     private fun removeUser() {
-        val userObjectToRemove = UserClass(etEmail, etFirstName, etLastName, etAge)
-        deletedUserList.add(userObjectToRemove)
+
         if (validateInputs(etEmail, etFirstName, etLastName, etAge)) {
             val userObjectToRemove = UserClass(etEmail, etFirstName, etLastName, etAge)
-            deletedUserList.add(userObjectToRemove)
+
             if (activeUserList.contains(userObjectToRemove)) {
                 activeUserList.remove(userObjectToRemove)
+                deletedUserList.add(userObjectToRemove)
                 showSuccessMessage("User deleted successfully")
                 updateForLists()
             } else {
